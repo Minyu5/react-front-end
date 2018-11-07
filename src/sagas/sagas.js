@@ -3,7 +3,7 @@ import { fork, call, put } from 'redux-saga/effects';
 import request from 'superagent';
 
 
-function getWeather(tag) {
+function getTag(tag) {
   const url = `https://www.behance.net/v2/collections?q="${tag}"&api_key=V5nTUtxu7rdHibZB4A9hCsnti0wirm7e`;
   return request
           .get(url)
@@ -12,8 +12,8 @@ function getWeather(tag) {
     });
 }
 
-function* callGetWeather({tag, resolve, reject}) {
-  const result = yield call(getWeather, tag);
+function* callGetTag({tag, resolve, reject}) {
+  const result = yield call(getTag, tag);
   if (result) {
     yield put({type: "PROJECT_FETCHED", result});
     yield call(resolve);
@@ -22,12 +22,12 @@ function* callGetWeather({tag, resolve, reject}) {
   }
 }
 
-function* getWeatherSaga() {
-  yield* takeEvery("FETCH_PROJECT", callGetWeather);
+function* getTagSaga() {
+  yield* takeEvery("FETCH_PROJECT", callGetTag);
 }
 
 export default function* root() {
   yield [
-    fork(getWeatherSaga)
+    fork(getTagSaga)
   ]
 }

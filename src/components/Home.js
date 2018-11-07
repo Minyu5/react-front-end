@@ -26,9 +26,9 @@ class Home extends Component {
   behanceWidget() {
     const collections = this.props.project.collections;
     if (collections) {
-      const render = collections.map((element,index) => {
+      const render = collections.map((element, index) => {
         if (element.project_covers) {
-          return <div key={index+element.creator_id} style={blockStyle}>
+          return <div key={index + element.creator_id} style={blockStyle}>
             <div style={textStyle}>
               {element.owners[0].images[100] ?
                 <Image src={element.owners[0].images[100]} className='ui tiny circular center image' style={imgStyle} />
