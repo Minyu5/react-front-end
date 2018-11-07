@@ -4,7 +4,7 @@ The assignment:
 React app that uses the Behance public API. 
 The user can enter tags to search for and a submit button (Use redux for the form). After clicking the submit button the page will show a count of images with the tags searched for, grouped per user
 
-Minor Notes
+Important Notes
 
 1. Instagram API sandbox mode <br />
 Instagram API's sandbox mode stops me from accessing other users data unless they are also sandbox users added by me. And Instagram don't approve the public_content permission for one-off projects such as "displaying hashtag based content on your website". I used behance's API instead because it's open to the public. 
