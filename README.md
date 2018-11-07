@@ -7,7 +7,7 @@ The user can enter tags to search for and a submit button (Use redux for the for
 Important Notes
 
 **1. Instagram API sandbox mode** <br />
-![alt text](https://github.com/Minyu5/react-front-end/blob/master/public/Screen%20Shot%202018-11-06%20at%2011.02.59%20AM.png| width=300)
+![alt text | width=300](https://github.com/Minyu5/react-front-end/blob/master/public/Screen%20Shot%202018-11-06%20at%2011.02.59%20AM.png)
 Instagram API's sandbox mode stops me from accessing other users data unless they are also sandbox users added by me. And Instagram don't approve the public_content permission for one-off projects such as "displaying hashtag based content on your website". I used behance's API instead because it's open to the public. <br />
 For more information regarding the sandbox mode and its access limitations, please refer to https://www.instagram.com/developer/sandbox/
 
