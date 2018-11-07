@@ -19,3 +19,6 @@ I was going to use breakpoints but semantics ui offers a “stackable grid” sh
 
 4. css style sheet <br />
 I mainly used semantic ui react as my styling tool so I did not create a separate css stying sheet for this test
+
+5. .gitignore <br />
+I forgot to add .gitignore the first time I pushed to github so the node_modules folder is huge, so the clone/downloading process for this repo might be slow.
