@@ -10,7 +10,7 @@ Minor Notes
 Instagram API's sandbox mode stops me from accessing other users data unless they are also sandbox users added by me. And Instagram don't approve the public_content permission for one-off projects such as "displaying hashtag based content on your website". I used behance's API instead because it's open to the public. 
 
 2. CORS (access-control-allow-origin) <br />
-The behance api is not CORS enabled, so setting up a proxy in the backend is needed, which I am not sure how to do. I resolved this by installing a allow-control-allow-origin extension in my chrome browser https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en
+The behance api is not CORS enabled, so setting up a proxy in the backend is needed, which I am not sure how to do with reactJS. I resolved this by installing a allow-control-allow-origin extension in my chrome browser https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en <br/>
 Without this you won't see the results
 
 3. responsive design <br />
